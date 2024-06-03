@@ -1,8 +1,8 @@
-import React from 'react';
-import AreaChartComponent from '../components/AreaChart';
-import BarChart  from '../components/BarChart';
-import LineChart from '../components/LineChart';
-import RadarChart from'../components/RadarChart';
+import React from "react";
+import AreaChartComponent from "../components/AreaChart";
+import BarChart from "../components/BarChart";
+import LineChart from "../components/LineChart";
+import RadarChart from "../components/RadarChart";
 
 export default function SimpleLineChart() {
   return (
@@ -12,7 +12,7 @@ export default function SimpleLineChart() {
           <AreaChartComponent />
         </GridItem>
         <GridItem title="Bar Chart">
-          <BarChart /> 
+          <BarChart />
         </GridItem>
         <GridItem title="Line Chart">
           <LineChart />
@@ -30,7 +30,7 @@ export default function SimpleLineChart() {
 
 function GridItem({ title, children }) {
   return (
-    <div className="flex flex-col items-center justify-center p-4 border border-slate-900 bg-slate-900/50 rounded-xl h-[400px] w-full">
+    <div className="flex flex-col border-zinc-900 items-center justify-center p-4 border rounded-xl h-[400px] w-full">
       <h3 className="text-2xl font-semibold text-white mb-4">{title}</h3>
       {children}
     </div>
