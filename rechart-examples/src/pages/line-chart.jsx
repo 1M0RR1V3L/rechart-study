@@ -1,6 +1,7 @@
 import React from 'react';
 import AreaChartComponent from '../components/AreaChart';
 import  BarChart  from '../components/BarChart';
+import LineChart from '../components/LineChart';
 
 export default function SimpleLineChart() {
   return (
@@ -10,9 +11,11 @@ export default function SimpleLineChart() {
           <AreaChartComponent />
         </GridItem>
         <GridItem title="Bar Chart">
-          <BarChart />
+          <BarChart /> 
         </GridItem>
-        <GridItem title="Line Chart"></GridItem>
+        <GridItem title="Line Chart">
+          <LineChart />
+        </GridItem>
       </div>
     </main>
   );
